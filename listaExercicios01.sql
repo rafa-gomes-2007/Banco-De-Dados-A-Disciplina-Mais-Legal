@@ -65,3 +65,9 @@ select autores.nome, livros.titulo
 from livros
 left join autores 
 on autores.id  = livros.autor_id;
+
+select nome, count(livros.autor_id) as maior_autor
+from autores
+inner join livros 
+on autores.id = livros.autor_id
+group by nome;
