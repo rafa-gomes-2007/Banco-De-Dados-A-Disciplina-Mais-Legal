@@ -8,3 +8,7 @@ select a.nome,m.curso
 from alunos as a
 inner join matriculas as m on m.aluno_id = a.id 
 where m.curso = "Engenharia de Software";
+
+select produto, sum(receita) as receita_total
+from vendas
+group by produto;
