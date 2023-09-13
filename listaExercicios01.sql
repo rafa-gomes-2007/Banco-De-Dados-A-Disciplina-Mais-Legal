@@ -76,3 +76,9 @@ select produto, sum(receita) as menor_receita
 from vendas
 group by produto
 order by sum(receita) limit 1;
+
+select matriculas.curso, count(alunos.nome)
+from alunos
+inner join matriculas
+on matriculas.id = alunos.id
+group by curso
