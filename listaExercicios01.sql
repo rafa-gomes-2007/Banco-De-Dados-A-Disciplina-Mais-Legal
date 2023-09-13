@@ -55,3 +55,8 @@ select matriculas.curso, alunos.nome
 from alunos
 right join matriculas
 on matriculas.id = alunos.id;
+
+select matriculas.curso, alunos.nome
+from alunos
+inner join matriculas
+on matriculas.id = alunos.id;
