@@ -71,3 +71,8 @@ from autores
 inner join livros 
 on autores.id = livros.autor_id
 group by nome;
+
+select produto, sum(receita) as menor_receita
+from vendas
+group by produto
+order by sum(receita) limit 1;
