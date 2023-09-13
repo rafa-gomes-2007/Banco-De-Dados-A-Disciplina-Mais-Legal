@@ -25,3 +25,7 @@ group by curso;
 select produto, avg(receita) as receita_media
 from vendas
 group by produto;
+
+select produto,receita 
+from vendas
+where receita >= 10000;
