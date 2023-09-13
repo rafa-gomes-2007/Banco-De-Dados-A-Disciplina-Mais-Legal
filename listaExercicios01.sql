@@ -29,3 +29,9 @@ group by produto;
 select produto,receita 
 from vendas
 where receita >= 10000;
+
+select autores.nome as nome, count(titulo) as livros_por_autor
+from livros
+inner join autores on autores.id = livros.autor_id
+group by nome
+having count(titulo) >= 2;
