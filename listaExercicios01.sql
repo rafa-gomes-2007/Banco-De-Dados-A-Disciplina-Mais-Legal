@@ -21,3 +21,7 @@ group by nome;
 select curso, count(aluno_id) as alunos_por_curso
 from matriculas
 group by curso;
+
+select produto, avg(receita) as receita_media
+from vendas
+group by produto;
